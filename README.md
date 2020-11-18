@@ -1,1 +1,1 @@
-# curso-js
+# JavaScript moderno
