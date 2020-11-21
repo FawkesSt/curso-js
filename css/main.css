@@ -6,11 +6,32 @@
 
 body{
     font-family: 'Nunito', sans-serif;
-    background-color: #000000; 
+    background-color: #111111; 
     color: #ffffff;
     
 }
+ #main-header a{
+    text-decoration: none;
+    text-align: center;
+    color: #ffd700;
+    border: solid #ffd700;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+}
 
+#main-header a:hover{
+    color: #000000;
+    transition: 0.2s;
+    background-color: #ffd700;
+}
+
+
+#main-header{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
 p{
     text-align: justify;
 }
