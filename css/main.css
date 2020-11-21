@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #000000; 
+    color: #ffffff;
+    
+}
+
+p{
+    text-align: justify;
+}
+
+p, ul, ol{
+    padding: 10px 90px 10px 90px;
+}
+
+h1{
+    padding: 20px;
+    text-align: center; 
+    color: #ffd700
+}
+

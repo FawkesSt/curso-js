@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">       
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/main.css">      
     <title>Java Script Moderno</title>
 </head>
-<body style="font-family: 'Nunito', sans-serif; background-color: #000000; color: #ffffff;"> 
+<body> 
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="logo-js" style="width: 60px; height: 60px;">
-    <H1 style="text-align: center; color: #ffd700;">Java Script Client Side X Server Side</H1>
+    <h1>Java Script Client Side X Server Side</h1>
     <p style="text-align: justify;">O Java Script inicialmete era usado apenas no lado do cliente, porem agora possui frameworks que rodam no server side também.</p>         
     <hr>      
-    <H1 style="text-align: center; color: #ffd700;">Client-Server</H1>
+    <h1>Client-Server</h1>
     <p style="text-align: justify;">Cliente - Servidor: O cliente (usurario) faz uma requisição ao servidor atravez do browser no qual o mesmo responde, seja com uma página HTML, um vídeo ou até mesmo um arquivo para download.</p>
     <hr>
-    <H1 style="text-align: center; color: #ffd700;">Um pouco de história</H1>
+    <h1>Um pouco de história</h1>
     <ul>
         <li>1970: Arpanet</li>
         <li>1993: Tim Beners-Lee responsável pela criação da World Wide Web, linguagem HTML e o protocolo HTTP. </li>
@@ -29,9 +30,9 @@
         <li>2010: Surge o NodeJS possibilitando o uso do JavaScript do lado do server.</li>
     </ul>
     <hr>
-    <H1 style="text-align: center; color: #ffd700;">Variáveis e Tipos primitivos</H1>
-    <p style="text-align: justify;">Podemos declarar uma variável em JavaScript de três maneiras, usandos as palavras chaves var, let e const.  </p>
-    <p style="text-align: justify;">Um primitivo (valor primitivo, tipo de dados primitivo) é um dado que não é representado através de um Objeto e, por consequência, não possui métodos. Abaixo os 6 tipos em JavaScript</p><br>
+    <h1>Variáveis e Tipos primitivos</h1>
+    <p>Podemos declarar uma variável em JavaScript de três maneiras, usandos as palavras chaves var, let e const.</p>
+    <p>Um primitivo (valor primitivo, tipo de dados primitivo) é um dado que não é representado através de um Objeto e, por consequência, não possui métodos. Abaixo os 6 tipos em JavaScript</p>
     <ul>
         <li>String</li>
         <li>Number</li>
@@ -40,14 +41,38 @@
         <li>undefined</li>
         <li>Symbol (novo no ECMAScript 6)</li>
     </ul>
-    <p style="text-align: justify;">Vale relembrar que não declaramos o tipo da variavel o javascript automaticamente identifica o tipo de dado na variável declarada, caso queira saber o tipo da variavel declarada pode se usar typeof(nomeDaVariavel), ele retornará o tipo exato para você.</p><br>
+    <p>Vale relembrar que não declaramos o tipo da variavel o javascript automaticamente identifica o tipo de dado na variável declarada, caso queira saber o tipo da variavel declarada pode se usar typeof(nomeDaVariavel), ele retornará o tipo exato para você.</p>
     <hr>
+    <h1>Tratamento de dados</h1>
+    <p>Por padrão os dados capturados em uma window.prompt são recebidos numa variavel como string, no exemplo abaixo precisamos somar dois valores. Para que o retorno seja valido temos que antes converter o valor recebido para as variaveis number1 e number2 para o tipo Numbe para isso usamos o metodo Number(o valor que será recebido). Isso também é valido para a string, podemos usar o toString.</p>
+        <ol>
+            <li> let number1 = <b>Number</b>(window.prompt("Digite um numero: "));</li>
+            <li> let number2 = <b>Number</b>(window.prompt("Digite o segundo numero: "));</li>
+            <li> var result = number1 + number2;</li>
+            <li> window.alert(`A soma entre ${number1} e ${number2} é ${result}`)</li>
+        </ol>
+    <p>Para concatenar as variaveis podemos usar o placeholder, a sintaxe é: (`O valor da variavel é ${variavel}`)</p>
+   
+
+
+
     <script>
         window.alert("Notas das aulas do curso: JavaScript  Moderno - https://www.cursoemvideo.com/course/javascript ");
-        //window.confirm("");
-        //window.prompt("");
+      
+    /* var nome = window.prompt("Qual é seu nome?"); window.prompt recebe os valores em string
+
+    window.alert("Seja muito bem vindo " + nome + " passe no meu perfil e deixe uma mensagem!");
+
+    window.confirm(""); 
+
+
+        let number1 = Number(window.prompt("Digite um numero: "));
+        let number2 = Number(window.prompt("Digite o segundo numero: "));
+        var result = number1 + number2;
+        window.alert(`A soma entre ${number1} e ${number2} é ${result}`)
+        */
     </script>
 </body>
 
 </html>                                             
-
+ 
