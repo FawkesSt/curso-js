@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">   
+    <title>Desafios</title>
+</head>
+<body>
+    <h1>Desafio do Antes e Depois</h1>
+    <button onclick="antdep()">Antes e Depois</button>
+
+    <script>    
+        // Retorna o antecessor e sucessor do numero
+        function antdep() {
+           let numero = parseFloat(prompt("Digite um numero: "));
+           alert(`Antes de ${numero} temos ${numero-1}\nDepois do ${numero} temos ${numero+1}`);
+        }
+
+    </script>
+</body>
+</html>

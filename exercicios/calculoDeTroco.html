@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">   
+    <title>Desafios</title>
+</head>
+<body>
+    <h1>Calculo do Troco</h1>
+    
+    <button onclick="troco()">Comprar produto</button>
+
+    <script>    
+      function troco(){
+          let produto = prompt("Qual é o produto? ");
+          let produtoCusto = parseFloat(prompt("Quanto custa o produto?"));
+          let pagamento = parseFloat(prompt("Quanto voce pagou"));
+          alert(`Voce comprou ${produto}, custou ${produtoCusto} e voce deu ${pagamento} e vai receber de troco ${pagamento-produtoCusto}`);
+      }
+    </script>
+</body>
+</html>
