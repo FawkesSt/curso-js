@@ -34,7 +34,7 @@ a   {
 }
 
 #main-header a:hover{
-    color: #000000;
+    color: #111111;
     transition: 0.2s;
     background-color: #ffd700;
 }
